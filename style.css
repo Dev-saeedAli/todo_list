@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter&family=Josefin+Sans&family=Londrina+Shadow&family=Montserrat&family=Open+Sans&family=Poppins:ital@0;1&family=Public+Sans:wght@400;500&family=Roboto&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(109, 109, 255);
+    font-family: 'Roboto', sans-serif;
+}
+.todos-container{
+    background-color: white;
+    width: 310px;
+    min-height: 20vh;
+    max-width: 100%;
+    padding: 20px 15px 0px;
+    border-radius: 8px;
+}
+.todoInput{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.todoInput input{
+    width: 100%;
+    padding: 6px 10px;
+    outline: none;
+}
+.todoInput input.active{
+    border: 1px solid rgb(109, 109, 255);
+}
+.todoInput i{
+    position: absolute;
+    right:10px;
+    top: 8px;
+}
+.option-status{
+    font-size: .9rem;
+    padding: 8px 0px 8px;
+    display: flex;
+    font-weight: 550;
+    align-items: center;
+}
+.option-status span{
+    cursor: pointer;
+
+}
+.option-status span.active{
+    color: rgb(109, 109, 255);
+}
+.option-status .pending{
+    margin: 0px 12px;
+}
+.option-status .completed{
+    /* display: flex; */
+    flex: 1;
+}
+.option-status .clearBtn{
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    background-color: rgb(109, 109, 255);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.list-Items .list-Item{
+    padding: 10px 0px;
+    position: relative;
+    font-weight: 580;
+}
+.list-Items ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.list-Items ul  label input{
+    margin: 0px 10px 0px 0px;
+}
+.list-Items ul li {
+    font-size: .9rem;
+    width: 100%;
+    position: relative;
+}
+.list-Items .fa-solid{
+   position: absolute;
+   right: 0;
+   cursor: pointer;
+}
+.list-Items hr{
+    margin: 10px 0px;
+}
+.list-Item .para{
+    cursor: pointer;
+    
+}
+.list-Items .para.active{
+    text-decoration: line-through;
+}
+.list-Items li .popup-container{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    padding: 10px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+.list-Items .popup-container.active{
+    display: flex;
+}
+.list-Items .popup-container .edit,
+.list-Items .popup-container .delete{
+    cursor: pointer;
+    padding: 3px 6px 0px;
+}
+.list-Items .popup-container .edit:hover,
+.list-Items .popup-container .delete:hover{
+    background: lightgrey;
+}
+.list-Items div{
+    margin: 7px 0px 0px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1;
+}
+
+
+ul{
+    list-style: none;
+}

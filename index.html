@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Javascript -->
+    <script src="app.js" defer></script>
+    <title>Todos_App</title>
+</head>
+<body>
+    <div class="todos-container">
+        <div class="todoInput">
+            <i class="fa-solid fa-bars-staggered"></i>
+            <input type="text" placeholder="Add a new task" class="searchInput">
+        </div>
+        <div class="option-status">
+            <span id="all" class="all active">All</span>
+            <span id="pending" class="pending">Pending</span>
+            <span id="completed" class="completed">Completed</span>
+            <button class="clearBtn">Clear All</button>
+        </div>
+        <hr/>
+        <div class="list-Items">
+            
+        </div>
+    </div>
+</body>
+</html>
